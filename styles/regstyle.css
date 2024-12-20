@@ -1,0 +1,95 @@
+body {
+  background-color: white;
+  text-align: center;
+}
+p {
+  margin: 0;
+  text-align: center;
+}
+.form {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-style: solid;
+  position: relative;
+  width: 320px;
+  height: 100%;
+  border-width: 0.5px;
+  border-color: gray;
+  vertical-align: top;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.na {
+  width: 270px;
+  border-radius: 2px;
+  border: 1px solid;
+  padding-top: 9px;
+  padding-left: 8px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+.pa {
+  width: 270px;
+  border-radius: 2px;
+  border: 1px solid;
+  padding-top: 9px;
+  padding-left: 8px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
+.submit-button {
+  background-color: rgb(76, 181, 249);
+  color: white;
+  height: 30px;
+  width: 285px;
+  border: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline;
+}
+.facebook-button {
+  background-color: rgb(76, 181, 249);
+  color: white;
+  height: 30px;
+  width: 285px;
+  border: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline;
+}
+.img {
+  width: 180px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: rgb(76, 181, 249);
+}
+.description {
+  color: gray;
+  text-align: center;
+  font-size: 100%;
+}
+.last {
+  margin-top: 5px;
+  margin: auto;
+  width: 320px;
+  height: 100%;
+  padding: 10px;
+  border-style: solid;
+  position: relative;
+  align-items: center;
+  border-width: 0.8px;
+  border-color: gray;
+  text-align: center;
+  vertical-align: top;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-left: -10px;
+}

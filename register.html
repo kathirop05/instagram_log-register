@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Sign up &#x2022; Instagram</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/regstyle.css" />
+  </head>
+  <style></style>
+  <body>
+    <div class="body-page">
+      <div class="form">
+        <div class="img-container">
+          <img class="img" src="images/ins.png" />
+        </div>
+        <p class="description">
+          Sign up to see photos and videos<br />
+          from your freinds
+        </p>
+        <button class="facebook-button" type="submit" value="submit">
+          <a href="#" class="fa fa-facebook"></a>Log in with Facebook
+        </button>
+        <input
+          class="na"
+          type="text"
+          id="num"
+          placeholder="Mobile number or email address"
+          required
+        />
+        <input
+          class="pa"
+          type="password"
+          id="Password"
+          placeholder="Password"
+          required
+        />
+        <input
+          class="na"
+          type="text"
+          id="fullname"
+          placeholder="Full Name"
+          required
+        />
+        <input
+          class="na"
+          type="text"
+          id="names"
+          placeholder="User name"
+          required
+        />
+        <button
+          class="submit-button"
+          type="submit"
+          value="submit"
+          onclick="store()"
+        >
+          Sign up
+        </button>
+        <div id="output"></div>
+      </div>
+      <div class="last">
+        <p class="login-page-button">
+          Have an account?
+          <a href="index.html"><strong class="sign">Log in</strong></a>
+        </p>
+      </div>
+      <script>
+        function store() {
+          const getName = document.getElementById("names").value;
+          const getPassword = document.getElementById("Password").value;
+
+          if (getName.trim() === "" || getPassword.trim() === "") {
+            alert("Please fill in all the fields.");
+            return;
+          }
+          let users = JSON.parse(localStorage.getItem("users")) || [];
+          if (users.some((user) => user.name === getName)) {
+            alert("Username already taken. Please choose another one.");
+            return;
+          }
+          users.push({ name: getName, password: getPassword });
+          localStorage.setItem("users", JSON.stringify(users));
+
+          alert("Registered successfully");
+          window.location.replace("index.html");
+        }
+      </script>
+    </div>
+  </body>
+</html>
